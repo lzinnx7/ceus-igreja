@@ -82,3 +82,120 @@
 
 </body>
 </html>
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #900; /* Vermelho para fogo e fervor espiritual */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+header .logo img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Sacramento', cursive;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #f3f3f3 50%, #fce1c8);
+}
+
+section h2 {
+    color: #900;
+    font-family: 'Sacramento', cursive;
+    font-size: 2em;
+}
+
+.cta-btn {
+    background-color: #ff6a13;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #900;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #900;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #bb0000;
+}
+
+footer p {
+    font-size: 0.8em;
+}
