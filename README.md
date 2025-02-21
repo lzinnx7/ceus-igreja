@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidade Evangélica União dos Santos - CEUS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Cabeçalho -->
     <header>
         <div class="logo">
@@ -77,5 +79,6 @@
     <footer>
         <p>&copy; 2025 Comunidade Evangélica União dos Santos - CEUS. Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>
