@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade Evangélica União dos Santos - CEUS</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #900;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            display: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #900;
+            color: white;
+        }
+        #home {
+            display: block; /* Página inicial visível */
+        }
+    </style>
+    <script>
+        function showPage(pageId) {
+            // Esconde todas as seções
+            let sections = document.querySelectorAll("section");
+            sections.forEach(section => section.style.display = "none");
+
+            // Exibe a seção correspondente
+            document.getElementById(pageId).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Comunidade Evangélica União dos Santos - CEUS</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showPage('home')">Início</a></li>
+                <li><a href="javascript:void(0);" onclick="showPage('sobre')">Sobre</a></li>
+                <li><a href="javascript:void(0);" onclick="showPage('eventos')">Eventos</a></li>
+                <li><a href="javascript:void(0);" onclick="showPage('ministerios')">Ministérios</a></li>
+                <li><a href="javascript:void(0);" onclick="showPage('contato')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção: Início -->
+    <section id="home">
+        <h2>Bem-vindo à CEUS</h2>
+        <p>Uma igreja acolhedora, onde a palavra de Deus transforma vidas!</p>
+    </section>
+
+    <!-- Seção: Sobre -->
+    <section id="sobre">
+        <h2>Sobre a CEUS</h2>
+        <p>A CEUS é uma igreja evangélica acolhedora, comprometida em viver o evangelho com fervor e união.</p>
+    </section>
+
+    <!-- Seção: Eventos -->
+    <section id="eventos">
+        <h2>Próximos Eventos</h2>
+        <ul>
+            <li><strong>Culto de Adoração</strong> - Todos os domingos, 10h</li>
+            <li><strong>Estudo Bíblico</strong> - Terças-feiras, 19h</li>
+            <li><strong>Evangelismo na Comunidade</strong> - Sábados, 9h</li>
+        </ul>
+    </section>
+
+    <!-- Seção: Ministérios -->
+    <section id="ministerios">
+        <h2>Ministérios da CEUS</h2>
+        <ul>
+            <li><strong>Ministério de Mídia</strong> - Criamos conteúdo para a igreja e a comunidade.</li>
+            <li><strong>Ministério de Louvor</strong> - Lideramos a adoração nos cultos.</li>
+            <li><strong>Ministério de Recepção</strong> - Acolhemos todos os visitantes com muito carinho.</li>
+            <li><strong>Ministério Infantil</strong> - Ensina as crianças sobre o amor de Deus de forma divertida.</li>
+        </ul>
+    </section>
+
+    <!-- Seção: Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Comunidade Evangélica União dos Santos - CEUS</p>
+    </footer>
+
+</body>
+</html>
